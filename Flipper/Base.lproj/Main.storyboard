@@ -1,22 +1,112 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InitialViewControllerId" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEF-Df-go4" customClass="FlippingLabel">
+                                <rect key="frame" x="16" y="20" width="75" height="75"/>
+                                <color key="backgroundColor" red="0.86747685190000001" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="7AL-8d-Go9"/>
+                                    <constraint firstAttribute="width" secondItem="CEF-Df-go4" secondAttribute="height" id="dSS-HZ-38d"/>
+                                    <constraint firstAttribute="width" constant="88" id="vvj-hp-XTh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vvj-hp-XTh"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDl-vb-X8f" customClass="FlippingLabel">
+                                <rect key="frame" x="94" y="20" width="81" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.95337323289999998" blue="0.78821379729999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRh-CK-gaA">
+                                <rect key="frame" x="58" y="123" width="298" height="175"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="From" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mhi-gb-Nck">
+                                        <rect key="frame" x="101" y="30" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="1hF-1l-Pqa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="kqV-4L-ayM"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lok-Tv-goT">
+                                        <rect key="frame" x="101" y="101" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="1jc-xa-Zty"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.82331225509999995" green="0.91082774379999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="mhi-gb-Nck" firstAttribute="width" secondItem="lok-Tv-goT" secondAttribute="width" id="0gJ-5p-uPF"/>
+                                    <constraint firstAttribute="height" constant="175" id="CtD-Fq-VlV"/>
+                                    <constraint firstAttribute="centerX" secondItem="mhi-gb-Nck" secondAttribute="centerX" constant="-0.5" id="Dfk-bm-1wW"/>
+                                    <constraint firstAttribute="bottom" secondItem="lok-Tv-goT" secondAttribute="bottom" constant="44" id="FkT-eC-9fU"/>
+                                    <constraint firstAttribute="width" constant="298" id="sIg-IO-brb"/>
+                                    <constraint firstAttribute="centerX" secondItem="lok-Tv-goT" secondAttribute="centerX" constant="-0.5" id="tm5-ER-snw"/>
+                                    <constraint firstItem="mhi-gb-Nck" firstAttribute="top" secondItem="XRh-CK-gaA" secondAttribute="top" constant="30" id="xbX-wV-V64"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4j-17-RGV">
+                                <rect key="frame" x="192" y="325" width="30" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="goButtonTapped" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ghz-Vb-Jcg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CEF-Df-go4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="5mG-u0-f7B"/>
+                            <constraint firstItem="XDl-vb-X8f" firstAttribute="top" secondItem="CEF-Df-go4" secondAttribute="top" id="6Uf-Kp-FiN"/>
+                            <constraint firstItem="d4j-17-RGV" firstAttribute="top" secondItem="XRh-CK-gaA" secondAttribute="bottom" constant="27" id="Eb3-TS-ywT"/>
+                            <constraint firstItem="XRh-CK-gaA" firstAttribute="top" secondItem="CEF-Df-go4" secondAttribute="top" constant="103" id="IOC-4s-Xhb"/>
+                            <constraint firstItem="XDl-vb-X8f" firstAttribute="width" secondItem="CEF-Df-go4" secondAttribute="height" multiplier="27:25" id="IWf-Jz-ep3"/>
+                            <constraint firstItem="XDl-vb-X8f" firstAttribute="leading" secondItem="CEF-Df-go4" secondAttribute="trailing" constant="3" id="Rv2-Ad-5Ec"/>
+                            <constraint firstItem="XDl-vb-X8f" firstAttribute="bottom" secondItem="CEF-Df-go4" secondAttribute="bottom" id="Sp7-5F-zV5"/>
+                            <constraint firstAttribute="centerX" secondItem="XRh-CK-gaA" secondAttribute="centerX" id="TMK-Nd-udZ"/>
+                            <constraint firstItem="CEF-Df-go4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ms1-J0-ayZ"/>
+                            <constraint firstAttribute="centerX" secondItem="d4j-17-RGV" secondAttribute="centerX" id="roD-P8-wdM"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="finalValueTextField" destination="lok-Tv-goT" id="grc-qu-6oM"/>
+                        <outlet property="initialValueTextField" destination="mhi-gb-Nck" id="lwW-Ev-moD"/>
+                        <outlet property="label1" destination="CEF-Df-go4" id="ICC-hI-a91"/>
+                        <outlet property="label2" destination="XDl-vb-X8f" id="MBX-jS-Iep"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

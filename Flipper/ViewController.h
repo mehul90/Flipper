@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlippingLabel.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet FlippingLabel *label1;
+@property (weak, nonatomic) IBOutlet FlippingLabel *label2;
+@property (weak, nonatomic) IBOutlet UITextField *initialValueTextField;
+@property (weak, nonatomic) IBOutlet UITextField *finalValueTextField;
 
 @end
 
