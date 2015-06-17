@@ -14,6 +14,12 @@
 		E1EDB4451B3056F500F37ADE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1EDB4441B3056F500F37ADE /* Images.xcassets */; };
 		E1EDB4481B3056F500F37ADE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1EDB4461B3056F500F37ADE /* LaunchScreen.xib */; };
 		E1EDB4541B3056F500F37ADE /* FlipperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EDB4531B3056F500F37ADE /* FlipperTests.m */; };
+		E1EDB47F1B307C8A00F37ADE /* ViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EDB47E1B307C8A00F37ADE /* ViewControllerTest.m */; };
+		E1EDB4851B30948100F37ADE /* FlippingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EDB4841B30948100F37ADE /* FlippingLabel.m */; };
+		E1EDB4881B30A09200F37ADE /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EDB4871B30A09200F37ADE /* NSString+Utilities.m */; };
+		E1EDB4A61B31508900F37ADE /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EDB49A1B31503900F37ADE /* libOCMock.a */; };
+		E1EDB4A91B3158A800F37ADE /* FlippingLabelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EDB4A81B3158A800F37ADE /* FlippingLabelTest.m */; };
+		E1EDB4AC1B316E6E00F37ADE /* NSString+UtilitiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EDB4AB1B316E6E00F37ADE /* NSString+UtilitiesTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,23 @@
 		E1EDB44D1B3056F500F37ADE /* FlipperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EDB4521B3056F500F37ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1EDB4531B3056F500F37ADE /* FlipperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipperTests.m; sourceTree = "<group>"; };
+		E1EDB47E1B307C8A00F37ADE /* ViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTest.m; sourceTree = "<group>"; };
+		E1EDB4831B30948100F37ADE /* FlippingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlippingLabel.h; sourceTree = "<group>"; };
+		E1EDB4841B30948100F37ADE /* FlippingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlippingLabel.m; sourceTree = "<group>"; };
+		E1EDB4861B30A09200F37ADE /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
+		E1EDB4871B30A09200F37ADE /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		E1EDB49A1B31503900F37ADE /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		E1EDB49D1B31504500F37ADE /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		E1EDB49E1B31504500F37ADE /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		E1EDB49F1B31504500F37ADE /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		E1EDB4A01B31504500F37ADE /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		E1EDB4A11B31504500F37ADE /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		E1EDB4A21B31504500F37ADE /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		E1EDB4A31B31504500F37ADE /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		E1EDB4A41B31504500F37ADE /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		E1EDB4A51B31504500F37ADE /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		E1EDB4A81B3158A800F37ADE /* FlippingLabelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlippingLabelTest.m; sourceTree = "<group>"; };
+		E1EDB4AB1B316E6E00F37ADE /* NSString+UtilitiesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UtilitiesTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1EDB4A61B31508900F37ADE /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +87,7 @@
 		E1EDB42B1B3056F500F37ADE = {
 			isa = PBXGroup;
 			children = (
+				E1EDB4991B31500F00F37ADE /* Libraries */,
 				E1EDB4361B3056F500F37ADE /* Flipper */,
 				E1EDB4501B3056F500F37ADE /* FlipperTests */,
 				E1EDB4351B3056F500F37ADE /* Products */,
@@ -85,6 +110,10 @@
 				E1EDB43C1B3056F500F37ADE /* AppDelegate.m */,
 				E1EDB43E1B3056F500F37ADE /* ViewController.h */,
 				E1EDB43F1B3056F500F37ADE /* ViewController.m */,
+				E1EDB4831B30948100F37ADE /* FlippingLabel.h */,
+				E1EDB4841B30948100F37ADE /* FlippingLabel.m */,
+				E1EDB4861B30A09200F37ADE /* NSString+Utilities.h */,
+				E1EDB4871B30A09200F37ADE /* NSString+Utilities.m */,
 				E1EDB4411B3056F500F37ADE /* Main.storyboard */,
 				E1EDB4441B3056F500F37ADE /* Images.xcassets */,
 				E1EDB4461B3056F500F37ADE /* LaunchScreen.xib */,
@@ -107,6 +136,9 @@
 			children = (
 				E1EDB4531B3056F500F37ADE /* FlipperTests.m */,
 				E1EDB4511B3056F500F37ADE /* Supporting Files */,
+				E1EDB47E1B307C8A00F37ADE /* ViewControllerTest.m */,
+				E1EDB4A81B3158A800F37ADE /* FlippingLabelTest.m */,
+				E1EDB4AB1B316E6E00F37ADE /* NSString+UtilitiesTests.m */,
 			);
 			path = FlipperTests;
 			sourceTree = "<group>";
@@ -117,6 +149,31 @@
 				E1EDB4521B3056F500F37ADE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1EDB4991B31500F00F37ADE /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E1EDB49A1B31503900F37ADE /* libOCMock.a */,
+				E1EDB49C1B31504500F37ADE /* OCMock */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E1EDB49C1B31504500F37ADE /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				E1EDB49D1B31504500F37ADE /* NSNotificationCenter+OCMAdditions.h */,
+				E1EDB49E1B31504500F37ADE /* OCMArg.h */,
+				E1EDB49F1B31504500F37ADE /* OCMConstraint.h */,
+				E1EDB4A01B31504500F37ADE /* OCMLocation.h */,
+				E1EDB4A11B31504500F37ADE /* OCMMacroState.h */,
+				E1EDB4A21B31504500F37ADE /* OCMock.h */,
+				E1EDB4A31B31504500F37ADE /* OCMockObject.h */,
+				E1EDB4A41B31504500F37ADE /* OCMRecorder.h */,
+				E1EDB4A51B31504500F37ADE /* OCMStubRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1EDB4851B30948100F37ADE /* FlippingLabel.m in Sources */,
+				E1EDB4881B30A09200F37ADE /* NSString+Utilities.m in Sources */,
 				E1EDB4401B3056F500F37ADE /* ViewController.m in Sources */,
 				E1EDB43D1B3056F500F37ADE /* AppDelegate.m in Sources */,
 				E1EDB43A1B3056F500F37ADE /* main.m in Sources */,
@@ -229,6 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1EDB47F1B307C8A00F37ADE /* ViewControllerTest.m in Sources */,
+				E1EDB4A91B3158A800F37ADE /* FlippingLabelTest.m in Sources */,
+				E1EDB4AC1B316E6E00F37ADE /* NSString+UtilitiesTests.m in Sources */,
 				E1EDB4541B3056F500F37ADE /* FlipperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,8 +437,24 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/mparmar/Downloads/Xcode\\ 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(PROJECT_DIR)/Libraries",
+				);
 				INFOPLIST_FILE = FlipperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Libraries",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flipper.app/Flipper";
 			};
@@ -390,8 +468,24 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/mparmar/Downloads/Xcode\\ 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(PROJECT_DIR)/Libraries",
+				);
 				INFOPLIST_FILE = FlipperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Libraries",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flipper.app/Flipper";
 			};
@@ -416,6 +510,7 @@
 				E1EDB4591B3056F500F37ADE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1EDB45A1B3056F500F37ADE /* Build configuration list for PBXNativeTarget "FlipperTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +519,7 @@
 				E1EDB45C1B3056F500F37ADE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -51,6 +51,7 @@
 - (void)testNextCharacterInSequence {
     XCTAssertTrue([[@"A" nextCharacterInSequence] isEqualToString:@"B"]);
     XCTAssertTrue([[@"%" nextCharacterInSequence] isEqualToString:@"-"]);
+    XCTAssertTrue([[@"-" nextCharacterInSequence] isEqualToString:@"-"]);
 }
 
 @end
