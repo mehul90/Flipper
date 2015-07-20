@@ -1,0 +1,6 @@
+language: objective-c
+xcodebuild test -scheme Flipper \
+				-configuration Debug \
+                -sdk iphonesimulator \
+                -verbose \
+                -destination 'platform=iOS Simulator,name=iPad Air'
