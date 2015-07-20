@@ -41,7 +41,6 @@
     
     ![self.viewController.label1.text isEqualToString:@"-"] ? OCMVerify([mockLabel1 flipToAlphabet:OCMOCK_ANY]) : [[mockLabel1 reject] flipToAlphabet:OCMOCK_ANY];
     ![self.viewController.label2.text isEqualToString:@"-"] ? OCMVerify([mockLabel2 flipToAlphabet:OCMOCK_ANY]) : [[mockLabel2 reject] flipToAlphabet:OCMOCK_ANY];
-
 }
 
 @end
